@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="80.0" prefWidth="216.0" vgap="10" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <SplitPane dividerPositions="0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1">
+        <items>
+            <TextField fx:id="scores2" text="Enter Student Score" />
+            <TextField fx:id="scores3" text="Enter Student Score" />
+            <TextField fx:id="scores4" text="Enter Student Score" />
+            <TextField fx:id="scores5" text="Enter Student Score" />
+            <TextField fx:id="scores6" text="Enter Student Score" />
+            <TextField fx:id="scores1" text="Enter Student Score" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#calculateGrade" text="Get the Grade!" />
+            <ScrollBar />
+        </items>
+      </SplitPane>
+   </children>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+</GridPane>
